@@ -185,6 +185,16 @@ export default function BoueeTravelSite() {
                     <span className="absolute left-4 top-4 rounded-lg bg-gradient-to-r from-purple-700 to-fuchsia-600 px-4 py-2 text-xs font-black">{deal.month}</span>
                     <button onClick={function () { toggleSave(deal.id); }} className="absolute right-4 top-4 text-3xl text-white drop-shadow-lg">{saved.indexOf(deal.id) !== -1 ? "♥" : "♡"}</button>
                     <div className="absolute bottom-4 left-4 right-4">
+
+<a
+  href="https://kiwi.tpx.li/BgXbXSJ8"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-4 inline-flex rounded-xl bg-purple-600 px-4 py-3 font-bold text-white hover:bg-purple-500"
+>
+  View Flights
+</a>
+
                       <h3 className="text-xl font-black">{deal.city}, {deal.country}</h3>
                       <p className="mt-2 text-sm text-zinc-300">from <span className="text-2xl font-black text-purple-300">{money(deal.price)}</span> <span className="ml-2 rounded-full bg-green-700/70 px-2 py-1 text-xs text-green-100">{deal.save}</span> <span className="text-xs">vs avg.</span></p>
                     </div>
