@@ -202,13 +202,29 @@ export default function BoueeTravelSite() {
             <p className="mt-3 text-zinc-300">Pick a destination and Bouee helps you outline a simple budget plan with flights, stays, food, transportation, and activities.</p>
             <div className="mt-6 rounded-3xl border border-purple-400/10 bg-black p-5 text-zinc-200">Plan a 4-day beach trip under $600 next month.</div>
           </div>
-          <form id="alerts" onSubmit={joinWaitlist} className="glass rounded-[2rem] border border-purple-500/20 bg-gradient-to-br from-purple-950 via-fuchsia-950 to-black p-8">
-            <div className="mb-4 inline-flex rounded-2xl bg-purple-600/20 p-3 text-2xl">↘</div>
-            <h2 className="text-3xl font-black">Get price drop alerts</h2>
-            <p className="mt-3 text-zinc-300">Join the waitlist and get notified when new Bouee deals drop.</p>
-            <div className="mt-6 flex flex-col gap-3 sm:flex-row"><input value={email} onChange={function (e) { setEmail(e.target.value); }} placeholder="your@email.com" className="min-h-12 flex-1 rounded-xl border border-purple-400/20 bg-black/60 px-4 text-white outline-none" /><Button type="submit" className="bg-purple-600 px-6 py-3 hover:bg-purple-500">Join</Button></div>
-            {joined && <p className="mt-3 font-bold text-purple-100">You’re on the list. Bouee will send cheap trip alerts soon.</p>}
-          </form>
+         <div className="glass rounded-[2rem] border border-purple-500/20 bg-gradient-to-br from-purple-950 via-fuchsia-950 to-black p-8">
+  <h2 className="text-3xl font-black">
+    Get Exclusive Travel Deals Before Everyone Else
+  </h2>
+
+  <p className="mt-3 text-zinc-300">
+    Join the Bouee list for curated destinations, price drops, and limited travel offers.
+  </p>
+
+  <div className="mt-6 h-[420px] overflow-hidden rounded-2xl border border-purple-400/20 bg-black/40">
+    <iframe
+      data-tally-src="https://tally.so/r/Ekvp8o?formEventsForwarding=1"
+      width="100%"
+      height="100%"
+      frameBorder="0"
+      marginHeight="0"
+      marginWidth="0"
+      title="Get Exclusive Travel Deals Before Everyone Else"
+    ></iframe>
+  </div>
+
+  <script async src="https://tally.so/widgets/embed.js"></script>
+</div>
         </section>
       </main>
 
